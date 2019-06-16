@@ -1,2 +1,4 @@
-# myanimelist-templates
+# MAL-customTemplates
 Custom templates to myanimelist
+
+
