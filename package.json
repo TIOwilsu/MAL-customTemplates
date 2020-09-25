@@ -6,14 +6,17 @@
   "author": "Wilson Queiroz Rocha <wilson.queiroz@ipepar.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "export NODE_ENV=development && webpack-dev-server",
+    "dev-server": "nodemon src/app.js",
+    "dev-client": "export NODE_ENV=development && webpack-dev-server",
     "build": "export NODE_ENV=production && webpack"
   },
   "dependencies": {
     "css-loader": "^4.3.0",
+    "express": "^4.17.1",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^0.11.2",
     "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
