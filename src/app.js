@@ -1,13 +1,14 @@
-const path = require('path')
+const routes = require('./routes')
+const cors = require('cors')
 const express = require('express')
-const publicPath = path.join(__dirname, '../public/')
- app = express()
+const app = express()
 
+const corsOptions = {
+    origin: 'http://localhost:9000',
+    optionsSuccessStatus: 200
+}
 
+app.use(cors(corsOptions))
+routes.start(app)
 
-app.get((req, res, next) => {
-    console.log('asodasdi')
-})
-
-app.use(express.static(publicPath))
 app.listen(9001)
